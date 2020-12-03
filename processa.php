@@ -7,7 +7,7 @@ $nf = $_POST['nf'];
 $rua = $_POST['rua'];
 $baia = $_POST['baia'];
 
-$sql = "insert into entrada_mat (ud,nf,rua,baia) values('$ud','$nf','$rua','$baia')";
+$sql = "insert into wms_expresso.entrada_mat (ud,nf,rua,baia) values ('$ud','$nf','$rua','$baia')";
 $salvar = mysqli_query($conexao, $sql);
 
 $linhas = mysqli_affected_rows($conexao);
@@ -31,10 +31,10 @@ mysqli_close($conexao);
     <div class="container">
         <nav>
             <ul class="menu">
-                <li class="active"><a href="index.php">Entrada</li>
-                <li><a href="">Consultas</li>
-                <li><a href="">Movimentação</li>
-                <li><a href="">Saída</li>
+                <li class="active"><a href="index.php">Entrada</a></li>
+                <li><a href="">Consultas</a></li>
+                <li><a href="">Movimentação</a></li>
+                <li><a href="">Saída</a></li>
             </ul>
         </nav>
         <selection>
